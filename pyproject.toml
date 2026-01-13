@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "csf-toolkit"
+version = "0.1.0"
+description = "CSF reception-metric toolkit (PONOS + variants)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "YOUR_NAME"}]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.5.0", "mypy>=1.8"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["csf_toolkit*"]
