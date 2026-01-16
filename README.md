@@ -2,7 +2,7 @@
 
 A small, composable Python toolkit for CSF-style reception metrics (PONOS + variants).
 
-## Install (editable)
+## Install
 
 ```bash
 pip install -e .
@@ -34,7 +34,7 @@ print(ponos(thread, ToyScorer()))  # 0.666...
 - `ponos`, `ponos_net`, `ponos_early`, `ponos_weighted`
 - simple Wilson confidence interval helper (`ponos(..., return_ci=True)`)
 
-## Next steps you can add
+## Next steps
 - Plug-in sentiment scorers (HF / LLM prompting / fine-tuned models)
 - Thread loaders for your platform(s)
 - Evaluation helpers (quadrant analysis: intrinsic vs reception)
